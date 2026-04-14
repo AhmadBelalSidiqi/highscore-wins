@@ -14,16 +14,15 @@ public class HighScoreWins {
         String home = namesSplits[0];
         String visitor = namesSplits[1];
 
-        String[] scors = namesScoreSplit[1].split(":");
-        int homeScore = Integer.parseInt(scors[0]);
-        int visitorScore = Integer.parseInt(scors[1]);
+        String[] scores = namesScoreSplit[1].split(":");
+        int homeScore = Integer.parseInt(scores[0]);
+        int visitorScore = Integer.parseInt(scores[1]);
 
-        if (homeScore > visitorScore){
-        System.out.println("Winner : " + home);}
-
-        if (homeScore < visitorScore){
-            System.out.println("Winner : " + visitor);}
-
+        if (homeScore > visitorScore) {
+            System.out.println("Winner : " + home);
+        } else /* visitorScore > homeScore */{
+            System.out.println("Winner : " + visitor);
+        }
 
 
 
